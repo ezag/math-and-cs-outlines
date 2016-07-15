@@ -11,18 +11,18 @@
 
 \frontmatter
 \maketitle
-
-\chapter{Введение}
+\tableofcontents
+\input{introduction/introduction.tex}
 
 \mainmatter
-
-\chapter{Теория множеств}
-\chapter{Теория вероятностей}
-\chapter{Математический анализ}
-\chapter{Линейная алгебра}
-\chapter{Криптография}
-\chapter{Алгоритмы}
-\chapter{Машинное обучение}
+\include{logic/logic}
+\include{set/set}
+\include{probability/probability}
+\include{calculus/calculus}
+\include{linear-algebra/linear-algebra}
+\include{cryptography/cryptography}
+\include{algorithms/algorithms}
+\include{machine-learning/machine-learning}
 
 \appendix
 % \chapter{Приложение}
