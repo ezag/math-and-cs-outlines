@@ -2,6 +2,13 @@
 \usepackage[utf8]{inputenc}
 \usepackage[T1,T2A]{fontenc}
 \usepackage[russian]{babel}
+
+\usepackage[backend=biber]{biblatex}
+\addbibresource{sources.bib}
+% Workaround - http://tex.stackexchange.com/a/277317
+\NewBibliographyString{langjapanese}
+\NewBibliographyString{fromjapanese}
+
 \usepackage{indentfirst}
 
 \title{Конспекты по математике и информатике}
@@ -27,6 +34,6 @@
 \appendix
 
 \backmatter
-\include{bibliography}
+\printbibliography
 
 \end{document}
