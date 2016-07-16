@@ -2,6 +2,8 @@
 \usepackage[utf8]{inputenc}
 \usepackage[T1,T2A]{fontenc}
 \usepackage[russian]{babel}
+\usepackage{csquotes}
+\usepackage[hidelinks]{hyperref}
 
 \usepackage[backend=biber,sorting=none]{biblatex}
 \addbibresource{sources.bib}
@@ -10,15 +12,18 @@
 \NewBibliographyString{langjapanese}
 \NewBibliographyString{fromjapanese}
 
-\usepackage{indentfirst}
+\usepackage[type={CC},modifier={by-sa},version={3.0}]{doclicense}
 
 \title{Конспекты по математике и информатике}
 \author{Евгений Загородний}
+
+\usepackage{indentfirst}
 
 \begin{document}
 
 \frontmatter
 \maketitle
+\include{copyright}
 \tableofcontents
 \input{introduction/introduction.tex}
 
