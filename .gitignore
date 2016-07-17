@@ -10,3 +10,6 @@
 *.fls
 *.fdb_latexmk
 *.out
+*.idx
+*.ilg
+*.ind

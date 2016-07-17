@@ -5,6 +5,7 @@
 \usepackage{csquotes}
 \usepackage[hidelinks]{hyperref}
 \usepackage{shorttoc}
+\usepackage{makeidx}
 
 \usepackage[backend=biber,sorting=none]{biblatex}
 \addbibresource{bibliography/sources.bib}
@@ -22,6 +23,7 @@
 
 \usepackage{indentfirst}
 
+\makeindex
 \begin{document}
 
 \frontmatter
@@ -45,15 +47,16 @@
 \chapter{Понятия, используемые без определения}
 
 \begin{itemize}
-  \item множество
-  \item матрица
-  \item функция
+  \item множество \index{множество}
+  \item матрица \index{матрица}
+  \item функция \index{функция}
 \end{itemize}
 
 \chapter{Теоремы, используемые без доказательства}
 \chapter{Теоремы, используемые без формулировки}
 
 \backmatter
+\printindex
 \printbibliography
 
 \end{document}
